@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Задача №3 / Alexander Kshnyakin / MOLGA Consulting</title>
+  </head>
+
+  <body onload="init()">
+    <p>Отсчет секундомера ведется с момента загрузки страницы.</p>
+    <p>Секундомер: 
+        <input type="read" id="secundomer" readonly></input></p>
+    <hr>
+    <span>&copy; 2019, Alexander Kshnyakin for MOLGA Consulting.</span>
+  </body>
+</html>
+
+<script>
+  function init() {
+    sec = 0;
+    setInterval(tick, 1000);
+  }
+
+  function tick() {
+    sec++;
+    document.getElementById("secundomer").value = sec;
+  }
+</script>
