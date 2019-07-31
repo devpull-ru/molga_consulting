@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Задача №2 / Alexander Kshnyakin / MOLGA Consulting</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <style>
+    span.plus {
+      font-size: 1.3em;
+      background-color: red;
+      padding: 0.1em;
+    }
+    </style>
+  </head>
+
+  <body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Иерархический список</h1>
+    </div>
+    <div class="col-md-12">
+      <p>Количество кликов: <span id="clickCount">0</span></p>
+      <ul class="treeline">
+        <li>
+          <span class="plus"  onclick="openClose(this)">-</span>Школа №1
+          <ul>
+            <li>
+              <span class="plus" onclick="openClose(this)">-</span>Список классов #1
+              <ul>
+                <li><span class="plus"  onclick="openClose(this)">-</span>1 "А"
+                  <ul>
+                    <li>Иванов</li>
+                    <li>Петров</li>
+                  </ul></li>
+                <li>2 "Г"</li>
+              </ul>
+            </li>
+            <li>Список учителей</li>
+          </ul>
+          <ul>
+            <li>
+              <span class="plus" onclick="openClose(this)">-</span>Список классов #2
+              <ul>
+                <li><span class="plus"  onclick="openClose(this)">-</span>1 "А"
+                  <ul>
+                    <li>Иванов</li>
+                    <li>Петров</li>
+                  </ul></li>
+                <li>2 "Г"</li>
+              </ul>
+            </li>
+            <li>Список учителей</li>
+          </ul>
+          <ul>
+            <li>
+              <span class="plus" onclick="openClose(this)">-</span>Список классов #3
+              <ul>
+                <li><span class="plus"  onclick="openClose(this)">-</span>1 "А"
+                  <ul>
+                    <li>Иванов</li>
+                    <li>Петров</li>
+                  </ul></li>
+                <li>2 "Г"</li>
+              </ul>
+            </li>
+            <li>Список учителей</li>
+          </ul>
+          <ul>
+            <li>
+              <span class="plus" onclick="openClose(this)">-</span>Список классов #4
+              <ul>
+                <li><span class="plus"  onclick="openClose(this)">-</span>1 "А"
+                  <ul>
+                    <li>Иванов</li>
+                    <li>Петров</li>
+                  </ul></li>
+                <li>2 "Г"</li>
+              </ul>
+            </li>
+            <li>Список учителей</li>
+          </ul>
+          <ul>
+            <li>
+              <span class="plus" onclick="openClose(this)">-</span>Список классов #5
+              <ul>
+                <li><span class="plus"  onclick="openClose(this)">-</span>1 "А"
+                  <ul>
+                    <li>Иванов</li>
+                    <li>Петров</li>
+                  </ul></li>
+                <li>2 "Г"</li>
+              </ul>
+            </li>
+            <li>Список учителей</li>
+          </ul>
+          <ul>
+            <li>
+              <span class="plus" onclick="openClose(this)">-</span>Список классов #6
+              <ul>
+                <li><span class="plus"  onclick="openClose(this)">-</span>1 "А"
+                  <ul>
+                    <li>Иванов</li>
+                    <li>Петров</li>
+                  </ul></li>
+                <li>2 "Г"</li>
+              </ul>
+            </li>
+            <li>Список учителей</li>
+          </ul>
+          <ul>
+            <li>
+              <span class="plus" onclick="openClose(this)">-</span>Список классов #7
+              <ul>
+                <li><span class="plus"  onclick="openClose(this)">-</span>1 "А"
+                  <ul>
+                    <li>Иванов</li>
+                    <li>Петров</li>
+                  </ul></li>
+                <li>2 "Г"</li>
+              </ul>
+            </li>
+            <li>Список учителей</li>
+          </ul>
+          <ul>
+            <li>
+              <span class="plus" onclick="openClose(this)">-</span>Список классов #8
+              <ul>
+                <li><span class="plus"  onclick="openClose(this)">-</span>1 "А"
+                  <ul>
+                    <li>Иванов</li>
+                    <li>Петров</li>
+                  </ul></li>
+                <li>2 "Г"</li>
+              </ul>
+            </li>
+            <li>Список учителей</li>
+          </ul>
+          <ul>
+            <li>
+              <span class="plus" onclick="openClose(this)">-</span>Список классов #9
+              <ul>
+                <li><span class="plus"  onclick="openClose(this)">-</span>1 "А"
+                  <ul>
+                    <li>Иванов</li>
+                    <li>Петров</li>
+                  </ul></li>
+                <li>2 "Г"</li>
+              </ul>
+            </li>
+            <li>Список учителей</li>
+          </ul>
+          <ul>
+            <li>
+              <span class="plus" onclick="openClose(this)">-</span>Список классов #10
+              <ul>
+                <li><span class="plus"  onclick="openClose(this)">-</span>1 "А"
+                  <ul>
+                    <li>Иванов</li>
+                    <li>Петров</li>
+                  </ul></li>
+                <li>2 "Г"</li>
+              </ul>
+            </li>
+            <li>Список учителей</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-12">
+      <hr>
+      <span>&copy; 2019, Alexander Kshnyakin for MOLGA Consulting.</span>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
+
+<script>
+  var counter = 0;
+  function openClose(el) {
+    parent = el.parentNode;
+    clickEl = document.getElementById("clickCount");
+    document.getElementById(el)
+
+    if (parent.children[1].style.display == "none") {
+      parent.children[1].style.display = "";
+      el.innerHTML = "-"
+      el.setAttribute("style", "background-color:red;");
+      counter++;
+    } else {
+      parent.children[1].style.display = "none";
+      el.innerHTML = "+"
+      el.setAttribute("style", "background-color:green;");
+      counter++;
+    }
+    clickEl.innerHTML = counter;
+  }
+</script>
