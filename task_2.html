@@ -178,23 +178,27 @@
 </html>
 
 <script>
-  var counter = 0;
-  function openClose(el) {
-    parent = el.parentNode;
-    clickEl = document.getElementById("clickCount");
-    document.getElementById(el)
-
-    if (parent.children[1].style.display == "none") {
-      parent.children[1].style.display = "";
-      el.innerHTML = "-"
-      el.setAttribute("style", "background-color:red;");
-      counter++;
-    } else {
-      parent.children[1].style.display = "none";
-      el.innerHTML = "+"
-      el.setAttribute("style", "background-color:green;");
-      counter++;
+var counter = 0;
+function openClose(el) {
+  parent = el.parentNode;
+  clickEl = document.getElementById("clickCount");
+  document.getElementById(el)
+  
+  if (parent.children[1].style.display == "none") {
+    for (var i=0; i<parent.children.length; i++) {
+      parent.children[i].style.display = "";
     }
-    clickEl.innerHTML = counter;
+    el.innerHTML = "-"
+    el.setAttribute("style", "background-color:red;");
+    counter++;
+  } else {
+    for (var i=0; i<parent.children.length; i++) {
+      parent.children[i].style.display = "none";
+    }
+    el.innerHTML = "+"
+    el.setAttribute("style", "background-color:green;");
+    counter++;
   }
+  clickEl.innerHTML = counter;
+}
 </script>
